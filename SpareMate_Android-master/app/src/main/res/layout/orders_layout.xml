@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:background="@drawable/border_line"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp" >
+
+    <ImageView
+        android:id="@+id/order_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/tyrefive" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp" >
+
+        <TextView
+            android:id="@+id/delivery_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivered_on_sep_12"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jk_tyre_165_80_r14_taximax_tubeless_car_tyre"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <RatingBar
+            android:id="@+id/order_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:theme="@style/RatingBar"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:isIndicator="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_this_product_now"
+            android:textColor="@color/black"
+            android:layout_marginTop="0dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

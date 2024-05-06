@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.BrandsActivity">
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rectangle_view"/>
+
+    <TextView
+        android:id="@+id/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/brands"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/search_stoke" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myRectangleView"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp" >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/brand_one"
+            android:layout_width="360dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_stoke"
+            android:text="@string/brands"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/brand_two"
+            android:layout_width="360dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_stoke"
+            android:text="@string/brands"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/brand_three"
+            android:layout_width="360dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_stoke"
+            android:text="@string/brands"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/brand_four"
+            android:layout_width="360dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_stoke"
+            android:text="@string/brands"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/brand_five"
+            android:layout_width="360dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_stoke"
+            android:text="@string/brands"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

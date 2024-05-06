@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <ImageButton
+        android:id="@+id/toggleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/white"
+        android:src="@drawable/menu"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/notification"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/white"
+        android:src="@drawable/bell"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_home"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/notification"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="45dp"
+        android:searchHintIcon="@string/edit_profile" />
+
+    <ImageView
+        android:id="@+id/scroll_View"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/search_home"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scroll_View"
+        android:layout_marginTop="10dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/category"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/category_text"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_marginTop="30dp" >-->
+
+    <RelativeLayout
+        android:id="@+id/cars"
+        android:layout_width="360dp"
+        android:layout_height="95dp"
+        android:background="@drawable/button_stoke"
+        android:layout_below="@id/category_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/carI"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/home_car"
+            android:layout_marginStart="20dp"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/carI"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/cars"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bikes"
+        android:layout_width="360dp"
+        android:layout_height="95dp"
+        android:background="@drawable/button_stoke"
+        android:layout_below="@id/cars"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/bikeI"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/home_bike"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/bike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bikeI"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/bikes"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/search_home"
+        android:layout_marginTop="40dp"/>
+
+
+
+</RelativeLayout>

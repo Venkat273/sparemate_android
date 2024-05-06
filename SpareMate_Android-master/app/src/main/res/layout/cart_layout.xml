@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/cartView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:background="@drawable/button_stoke"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp" >
+
+    <ImageView
+        android:id="@+id/cart_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/cart_title"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/thrustmaster_ferrari_250_gto_wheel"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/cart_title"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/categorytxtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/car_craft"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/brandtxtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/Brown"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/parttxtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/steel"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/cart_title"
+        android:layout_marginStart="230dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:text="@string/qty_1"
+        android:textColor="@color/black"
+        android:layout_below="@id/cart_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/qty"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

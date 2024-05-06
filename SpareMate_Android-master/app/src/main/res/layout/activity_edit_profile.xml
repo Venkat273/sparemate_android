@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/edit_profile"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/profile_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/profile" />
+
+        <EditText
+            android:id="@+id/usename"
+            android:layout_width="365dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/border_line"
+            android:text=""
+            android:hint="@string/User_name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="365dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/usename"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/border_line"
+            android:text=""
+            android:hint="@string/eMail"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="365dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/border_line"
+            android:text=""
+            android:hint="@string/phone"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveBtn"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@color/yellow"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textSize="16dp" />
+
+    </RelativeLayout>

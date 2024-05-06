@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressDetails">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" />
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/addresstxt"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:hint="Address"/>
+
+        <EditText
+            android:id="@+id/statetxt"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:hint="State"/>
+
+        <EditText
+            android:id="@+id/contact_notxt"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:hint="Contact No"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:hint="City"/>
+        <EditText
+            android:id="@+id/zip_codetxt"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:hint="Zip code"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addAdressBtn"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@color/yellow"
+            android:text="Add "
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

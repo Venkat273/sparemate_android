@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.SummaryActivity">
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rectangle_view"/>
+
+    <TextView
+        android:id="@+id/components"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/summary"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myRectangleView"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/addressColumn"
+                android:layout_width="377dp"
+                android:layout_height="202dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_stoke"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="@id/addressColumn"
+                app:layout_constraintStart_toStartOf="@id/addressColumn"
+                app:layout_constraintEnd_toEndOf="@id/addressColumn"
+                app:layout_constraintBottom_toBottomOf="@id/addressColumn"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Delivery To:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/ad_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="@string/content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/ad_fulladress"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="@string/content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/ad_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="@string/content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addresschangebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/app_color"
+                android:text="Change"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toTopOf="@id/addressColumn"
+                app:layout_constraintEnd_toEndOf="@id/addressColumn"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/detials_view"
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_stoke"
+                app:layout_constraintTop_toBottomOf="@id/addressColumn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/summary_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintTop_toTopOf="@id/detials_view"
+                app:layout_constraintStart_toStartOf="@id/detials_view"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp" />
+
+            <TextView
+                android:id="@+id/summary_title"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toTopOf="@id/detials_view"
+                app:layout_constraintStart_toEndOf="@id/summary_image"
+                app:layout_constraintEnd_toEndOf="@id/detials_view"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="JK TYRE Challenger R42 2.75-18 Tube-Type Bike Tyre, Front"
+                android:textColor="@color/black"
+                android:textAlignment="viewStart"
+                tools:ignore="RtlCompat" />
+
+            <RatingBar
+                android:id="@+id/order_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:theme="@style/RatingBar"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                app:layout_constraintStart_toEndOf="@id/summary_image"
+                app:layout_constraintTop_toBottomOf="@id/summary_title"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/delivery_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/detials_view"
+                app:layout_constraintStart_toStartOf="@id/detials_view"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="Delivery by tomorrow"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/delivery_by"
+                app:layout_constraintStart_toStartOf="@id/detials_view"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="Qty : 1"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/delivery_by"
+                app:layout_constraintStart_toEndOf="@id/summary_image"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="₹1,250"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/delivery_by"
+                app:layout_constraintBottom_toBottomOf="@id/detials_view"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="5dp"
+                android:text="FREE Delivery"
+                android:textColor="@color/app_darker"
+                android:textAlignment="viewStart" />
+
+            <View
+                android:id="@+id/descriptions_view"
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_stoke"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detials_view" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@id/descriptions_view"
+                app:layout_constraintStart_toStartOf="@id/descriptions_view">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price Details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Price(item)"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Delivery Changes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Secured Packaging Fee"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Total Amount"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toTopOf="@id/descriptions_view"
+                app:layout_constraintEnd_toEndOf="@id/descriptions_view">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price Details"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="₹1,250"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="FREE Delivery"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="₹99"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="₹1,349"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continues"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/yellow"
+                android:text="Pay"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/descriptions_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

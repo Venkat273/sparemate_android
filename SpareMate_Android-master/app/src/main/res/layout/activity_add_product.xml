@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".admin.AddProductActivity">
+
+    <ImageView
+        android:id="@+id/I"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/I"
+        android:layout_marginTop="30dp"
+        android:fillViewport="true" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/category_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/category"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/brand_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/brands"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/parts_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/parts"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/product_name"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/fileChoose"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/no_file_chosen"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/price_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/price"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+
+                <EditText
+                    android:id="@+id/discount_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/discount"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/supplier_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_black"
+                    android:hint="@string/supplier"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/start_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/app_color"
+                    android:text="@string/add_product"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

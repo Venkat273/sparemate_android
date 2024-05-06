@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:background="@drawable/border_line"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp" >
+
+    <ImageView
+        android:id="@+id/order_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/tyrefive" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp" >
+
+        <TextView
+            android:id="@+id/clientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jk_tyre_165_80_r14_taximax_tubeless_car_tyre"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/partName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:text="partName"
+            android:layout_marginTop="5dp"
+            android:isIndicator="true" />
+
+        <TextView
+            android:id="@+id/userContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_margin="0dp">
+        <Button
+            android:id="@+id/cmplbtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Complete Order"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.UserMainActivity">
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle_view"/>
+
+    <TextView
+        android:id="@+id/components"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/cart"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/cartView"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:background="@color/app_light"
+        android:layout_below="@id/myRectangleView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_recycler"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myRectangleView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>

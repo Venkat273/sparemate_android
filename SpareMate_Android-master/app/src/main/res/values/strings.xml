@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">SpareMate</string>
+    <string name="start">Get Started</string>
+    <string name="user">User</string>
+    <string name="employee">Employee</string>
+    <string name="usernameEmail">Username or Email</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup"> Sign Up</string>
+    <string name="login">Login</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="address">Select Address</string>
+    <string name="addAddress">Add a new address</string>
+    <string name="delivery">Delivery Here</string>
+    <string name="summary">Order Summary</string>
+
+
+    //admin menu
+    <string name="admin">Admin</string>
+    <string name="nav_admin_open">Open</string>
+    <string name="nav_admin_close">Close</string>
+
+
+    //menu
+    <string name="home_menu">Home</string>
+    <string name="cart_menu">Cart</string>
+    <string name="profile_menu">Profile</string>
+    <string name="search_menu">Search</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="status">Status</string>
+    <string name="logout">Logout</string>
+
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    //profile
+    <string name="edit">Edit Button</string>
+    <string name="User_name">User Name</string>
+    <string name="eMail">E-mail</string>
+    <string name="phone">Phone Number</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save">Save</string>
+
+    <string name="brands">Brands</string>
+    <string name="types">Types</string>
+
+    <string name="category">Categories</string>
+    <string name="cars">Cars</string>
+    <string name="bikes">Bikes</string>
+
+    <string name="content">Content</string>
+    <string name="add">Add to cart</string>
+    <string name="components">Components</string>
+    <string name="buy">Buy Now</string>
+
+    //dashboard
+
+    <string name="no1">83</string>
+    <string name="work">Assigned Work</string>
+    <string name="no2">35</string>
+    <string name="visit">Daily Visitors</string>
+    <string name="tctm">Total Count, This Month</string>
+    <string name="recentTask">Recent Task</string>
+
+    //recent_task
+    <string name="parts">Parts</string>
+    <string name="clinet_name">Clint Name</string>
+    <string name="contact">Contact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //parts
+    <string name="car_parts">Car Parts</string>
+    <string name="bike_parts">Bike Parts</string>
+    <string name="tyres">Tyres</string>
+    <string name="brake_system">Brake System</string>
+    <string name="engine_system">Engine System</string>
+    <string name="steering_system">Steering System</string>
+    <string name="gear_system">Gear System</string>
+    <string name="exhausters">Exhausters</string>
+    <string name="handle_bar">Handle Bar</string>
+    <string name="visor">Visor</string>
+    <string name="foot_rost">Foot Rost</string>
+
+    <!--    <string name="nav_open">Open</string>-->
+    <!--    <string name="nav_close">Close</string>-->
+
+    <string name="favorites">Favorites</string>
+    <string name="orders">Orders</string>
+    <string name="rate_this_product_now">Rate this product now</string>
+    <string name="jk_tyre_165_80_r14_taximax_tubeless_car_tyre">JK Tyre 165/80 R14 Taximax Tubeless car tyre</string>
+    <string name="delivered_on_sep_12">Delivered on sep 12</string>
+    <string name="car_craft">Car Craft</string>
+    <string name="thrustmaster_ferrari_250_gto_wheel">Thrustmaster Ferrari 250 GTO WheeL</string>
+    <string name="Brown">Brown</string>
+    <string name="steel">Steel</string>
+    <string name="qty_1">Qty:1</string>
+    <string name="cart">Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="back">Back</string>
+    <string name="item_ready_to_ship">Item ready to ship</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="product_name">Product Name</string>
+    <string name="no_file_chosen">No file Chosen</string>
+    <string name="price">Price</string>
+    <string name="product_brand">Product Brand</string>
+    <string name="discount">Discount</string>
+    <string name="supplier">Supplier</string>
+    <string name="add_product">Add product</string>
+    <string name="employee_details">Employee Details</string>
+
+
+    <string-array name="action">
+        <item>Sam</item>
+        <item>Radha</item>
+        <item>Harish</item>
+        <item>Sunil</item>
+    </string-array>
+
+
+</resources>
